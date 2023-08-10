@@ -507,3 +507,7 @@ func (c *StoreClient) Do(ctx context.Context, method string, url string, body io
 
 	return resp.StatusCode, byteData, err
 }
+
+func (c *StoreClient) ParseJWS(jwsEncode string, claims jwt.Claims) error {
+	return c.parseJWS(jwsEncode, claims)
+}
