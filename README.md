@@ -1,8 +1,6 @@
+# [App Store Server API](https://developer.apple.com/documentation/appstoreserverapi) Golang Client
 
-[App Store Server API](https://developer.apple.com/documentation/appstoreserverapi) Golang Client
-================
-
-The App Store Server API is a REST API that you call from your server to request and provide information about your customers' in-app purchases. 
+The App Store Server API is a REST API that you call from your server to request and provide information about your customers' in-app purchases.
 
 The App Store Server API is independent of the app’s installation status on the customers’ devices. The App Store server returns information based on a customer’s in-app purchase history regardless of whether the customer installs, removes, or reinstalls the app on their devices.
 
@@ -11,12 +9,13 @@ The App Store Server API is independent of the app’s installation status on th
 ### Installation
 
 ```shell
-go get github.com/richzw/appstore
+go get github.com/jmolboy/appstore
 ```
 
 ### [Generate a Private Key](https://developer.apple.com/documentation/appstoreserverapi/creating_api_keys_to_use_with_the_app_store_server_api)
 
 > Log in to [App Store Connect](https://appstoreconnect.apple.com/login) and complete the following steps:
+>
 > - Select Users and Access, and then select the Keys tab.
 > - Select In-App Purchase under the Key Type.
 > - Click Generate API Key or the Add (+) button.
@@ -27,7 +26,7 @@ go get github.com/richzw/appstore
 
 ```go
 import(
-	"github.com/richzw/appstore"
+	"github.com/jmolboy/appstore"
 )
 
 // ACCOUNTPRIVATEKEY is the key file generated from previous step
@@ -189,4 +188,3 @@ App Store Server API [1.8](https://developer.apple.com/documentation/appstoreser
 # License
 
 appstore is licensed under the MIT.
-
